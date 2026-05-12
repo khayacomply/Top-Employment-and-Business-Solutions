@@ -1,0 +1,60 @@
+:root {
+  --primary: #0f172a;
+  --accent: #f59e0b;
+  --text: #334155;
+  --light: #f8fafc;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--text);
+  background: var(--light);
+}
+
+.navbar-brand { letter-spacing: 1px; }
+.btn-warning { background: var(--accent); border: none; font-weight: 500; }
+.btn-warning:hover { background: #d97706; }
+.card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+.card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.1) !important; }
+.hero-section { background-attachment: fixed; }
+.swiper-pagination-bullet-active { background: var(--accent) !important; }
+
+/* Professional Job Card Styling */
+.job-card {
+  border-left: 3px solid var(--accent, #d4af37) !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.job-card:hover {
+  transform: translateX(5px);
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1) !important;
+}
+.job-card .text-muted small {
+  line-height: 1.6;
+}
+
+/* Keep form visible on desktop while scrolling jobs */
+@media (max-width: 991.98px) {
+  .sticky-lg-top { position: static !important; }
+}
+
+/* Clean icon spacing */
+.job-card .bi {
+  font-size: 0.95rem;
+}
+
+/* Team Section Styles */
+.team-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #fff;
+}
+.team-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15) !important;
+}
+.team-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border: 3px solid var(--accent, #d4af37);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
